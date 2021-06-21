@@ -15,5 +15,6 @@ export async function fetchVideoData(videoId: string): Promise<IVimeoVideo> {
   if (data.error) {
     throw new Error(data.error);
   }
+  data.id = videoId;
   return data;
 }

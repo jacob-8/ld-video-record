@@ -25,7 +25,7 @@
 	</div>
 	<div class="p-2 flex-grow flex flex-col justify-between">
 		<div class="text-sm font-semibold text-gray-900">
-			<!-- <slot name="title">{video.name}</slot> -->
+			{video.name}
 		</div>
 		<div class="flex justify-between items-center">
 			<div class="text-xs text-gray-600">
@@ -37,8 +37,8 @@
 
 <style>
 	.media-block {
-		flex: 0 0 75px;
-		width: 75px;
-		min-height: 75px;
+		flex: 0 0 200px;
+		width: 200px;
+		min-height: 200px;
 	}
 </style>

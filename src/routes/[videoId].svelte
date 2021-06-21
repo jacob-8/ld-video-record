@@ -4,15 +4,14 @@
 	import type { Load } from '@sveltejs/kit';
 	export const load: Load = async ({ page: { params } }) => {
 		const video = await fetchVideoData(params.videoId);
-		video.id = params.videoId;
 		return { props: { video } };
 	};
 </script>
 
 <script>
 	import Button from '$lib/components/Button.svelte';
-import JSON from '$lib/components/JSON.svelte';
-import type { IVimeoVideo } from '$lib/video/video.interface';
+	import JSON from '$lib/components/JSON.svelte';
+	import type { IVimeoVideo } from '$lib/video/video.interface';
 	export let video: IVimeoVideo;
 </script>
 
@@ -39,14 +38,8 @@ import type { IVimeoVideo } from '$lib/video/video.interface';
 </div>
 
 <div>
-
-  <Button	href="https://vimeo.com/manage/{video.id}/general">
-    Edit in Vimeo
-  </Button>
-  
-  <JSON obj={video} />
+	<Button href="https://vimeo.com/manage/{video.id}/general">Edit in Vimeo</Button>
+	<JSON obj={video} />
 </div>
 
-<div class="text-gray-600 text-xs my-2">
-	Help text
-</div>
+<div class="text-gray-600 text-xs my-2">Help text</div>
