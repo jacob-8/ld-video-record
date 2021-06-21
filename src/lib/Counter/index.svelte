@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import { spring } from 'svelte/motion';
 
 	let count = 0;

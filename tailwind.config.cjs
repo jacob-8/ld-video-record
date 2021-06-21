@@ -8,6 +8,7 @@ const config = {
 	theme: {
 		extend: {
 			colors: {
+				orange: colors.orange,
 				primary: colors.blue,
 			}
 		},

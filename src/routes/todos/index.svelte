@@ -1,4 +1,4 @@
-<script context="module" lang="ts">
+<script context="module">
 	import { enhance } from '$lib/form';
 	import type { Load } from '@sveltejs/kit';
 
@@ -22,7 +22,7 @@
 	};
 </script>
 
-<script lang="ts">
+<script>
 	import { scale } from 'svelte/transition';
 	import { flip } from 'svelte/animate';
 

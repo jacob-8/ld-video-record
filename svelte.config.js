@@ -6,8 +6,13 @@ const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
 	preprocess: [preprocess({
-        "postcss": true
-    })],
+		defaults: {
+			sourceMap: true,
+			style: 'postcss',
+			script: 'typescript'
+		},
+		postcss: true,
+	})],
 
 	kit: {
 		adapter: vercel(),
