@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "csstools.postcss",
+    "bradlc.vscode-tailwindcss",
+    "eamodio.gitlens",
+    "dbaeumer.vscode-eslint",
+    "usernamehw.errorlens",
+    "aaron-bond.better-comments",
+    "esbenp.prettier-vscode",
+    "fivethree.vscode-svelte-snippets",
+    "svelte.svelte-vscode"
+  ]
+}
