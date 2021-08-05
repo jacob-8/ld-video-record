@@ -4,6 +4,10 @@
 </script>
 
 <header>
+	<script src="https://apis.google.com/js/api.js"></script>
+	<script src="https://www.WebRTC-Experiment.com/RecordRTC.min.js"></script>
+
+
 	<div class="corner">
 		<a href="https://kit.svelte.dev">
 			<img src={logo} alt="SvelteKit" />

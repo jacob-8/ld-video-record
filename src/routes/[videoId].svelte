@@ -13,6 +13,9 @@
 	import JSON from '$lib/components/JSON.svelte';
 	import type { IVimeoVideo } from '$lib/video/video.interface';
 	export let video: IVimeoVideo;
+
+	<script src="https://www.WebRTC-Experiment.com/RecordRTC.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
 </script>
 
 <h1>{video.name}</h1>
